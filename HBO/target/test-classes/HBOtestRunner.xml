@@ -19,7 +19,8 @@
             <!--<class name="testHomePage.TestSignPage"/>-->
             <!--<class name="testHomePage.TestSignUp"/>-->
             <!--<class name="testHomePage.TestSignUp"/>-->
-            <class name="testHomePage.TestExcelReader"/>
+            <!--<class name="testHomePage.TestExcelReader"/>-->
+            <class name="testHomePage.TestFreeEpisodes"/>
 
         </classes>
     </test>
