@@ -456,7 +456,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548266727645" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548266800644" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -596,9 +596,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestSearchBox - 2019.01.23 at 10h 57m 51s.xml">
-      <configuration name="TestSearchBox" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="TestFindSports_getAboutTapia - 2019.01.23 at 12h 42m 02s.xml">
       <configuration name="TestFindSports.getAboutTapia" configurationId="TestNG" />
     </history-entry>
@@ -626,12 +623,14 @@
     <history-entry file="TestFindSports - 2019.01.23 at 13h 03m 07s.xml">
       <configuration name="TestFindSports" configurationId="TestNG" />
     </history-entry>
+    <history-entry file="_Users_shahnazpervin_Desktop_ekhtiar_Robin(HBO)_WebAutomationHBO2019_HBO_src_test_resources_HBOtestRunner_xml - 2019.01.23 at 13h 05m 30s.xml">
+      <configuration name="/Users/shahnazpervin/Desktop/ekhtiar/Robin(HBO)/WebAutomationHBO2019/HBO/src/test/resources/HBOtestRunner.xml" configurationId="TestNG" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="722" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25201938" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25201938" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -640,12 +639,12 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.13333334" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.11269841" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.4968254" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.103174604" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.23333333" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.23333333" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.31269842" />
