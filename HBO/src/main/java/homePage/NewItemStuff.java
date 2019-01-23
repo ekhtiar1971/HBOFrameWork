@@ -18,7 +18,6 @@ public class NewItemStuff extends CommonAPI {
     @FindBy(how = How.ID,using = "twitter-logo")
     WebElement logoVarification;
 
-
     public void setFindGetItToday(){
         findGetItToday.click();
     }
@@ -28,7 +27,7 @@ public class NewItemStuff extends CommonAPI {
     }
     public void getCrimeReport(){
         findStaffpick.click();
-       String st=findStaffpick.getText();
+        String st=findStaffpick.getText();
     }
     public String logoVarify()throws InterruptedException{
         System.out.println("show logo display status " + logoVarification.isDisplayed());

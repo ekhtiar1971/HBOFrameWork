@@ -11,7 +11,6 @@ public class MouseOverHandle extends CommonAPI {
     @FindBy(linkText = "Sports")
     WebElement findSports;
 
-
     public void mouseOverForSports()throws InterruptedException{
         findSports.click();
         Actions action=new Actions(driver);

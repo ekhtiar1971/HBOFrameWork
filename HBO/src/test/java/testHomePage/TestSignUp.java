@@ -5,7 +5,6 @@ import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import reporting.TestLogger;
-
 import java.util.Iterator;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
@@ -20,11 +19,9 @@ public class TestSignUp extends SignUp {
     public void test()throws Exception{
         sp.getGetHbo();
         sp.getStartYourFreeTrial();
-
         String parent = driver.getWindowHandle();
         Set<String> s1 = driver.getWindowHandles();
         Iterator<String> I1 = s1.iterator();
-
         while (I1.hasNext()) {
             String child_window = I1.next();
             if (!parent.equals(child_window)) {
@@ -46,11 +43,9 @@ public class TestSignUp extends SignUp {
     public void test1()throws Exception{
         sp.getGetHbo();
         sp.getStartYourFreeTrial();
-
         String parent = driver.getWindowHandle();
         Set<String> s1 = driver.getWindowHandles();
         Iterator<String> I1 = s1.iterator();
-
         while (I1.hasNext()) {
             String child_window = I1.next();
             if (!parent.equals(child_window)) {
@@ -71,11 +66,9 @@ public class TestSignUp extends SignUp {
     public void test2()throws Exception{
         sp.getGetHbo();
         sp.getStartYourFreeTrial();
-
         String parent = driver.getWindowHandle();
         Set<String> s1 = driver.getWindowHandles();
         Iterator<String> I1 = s1.iterator();
-
         while (I1.hasNext()) {
             String child_window = I1.next();
             if (!parent.equals(child_window)) {
@@ -97,11 +90,9 @@ public class TestSignUp extends SignUp {
     public void test5()throws Exception{
         sp.getGetHbo();
         sp.getStartYourFreeTrial();
-
         String parent = driver.getWindowHandle();
         Set<String> s1 = driver.getWindowHandles();
         Iterator<String> I1 = s1.iterator();
-
         while (I1.hasNext()) {
             String child_window = I1.next();
             if (!parent.equals(child_window)) {
@@ -119,6 +110,4 @@ public class TestSignUp extends SignUp {
             }
         }
     }
-
-
 }

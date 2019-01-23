@@ -22,7 +22,6 @@ import reporting.ExtentManager;
 import reporting.ExtentTestManager;
 import org.apache.commons.io.FileUtils;
 import reporting.TestLogger;
-
 import java.io.File;
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -38,7 +37,7 @@ import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 public class CommonAPI {
-    public WebDriver driver = null;
+    public static WebDriver driver = null;
     public String browserstack_username= "mohammadekhtiarr1";
     public String browserstack_accesskey = "qzNz1myx5TwzuTy6NZnL";
     public String saucelabs_username = "";
@@ -469,5 +468,9 @@ public class CommonAPI {
         }catch (Exception ex3){
             System.out.println("CSS locator didn't work");
         }
+    }
+
+    public static void implicitWait(WebDriver driver, int sec) {
+        driver.manage().timeouts().implicitlyWait(sec, TimeUnit.SECONDS);
     }
 }

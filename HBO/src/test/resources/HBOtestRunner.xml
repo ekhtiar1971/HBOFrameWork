@@ -12,16 +12,65 @@
     <parameter name="browserVersion" value="60.0"/>
     <parameter name="url" value="https://www.hbo.com/"/>
 
-    <test name = "Search ">
-        <classes>
-            <!--<class name="testHomePage.TestMainPage"/>-->
-            <!--<class name="testHomePage.TestNewItemStuff"/>-->
-            <!--<class name="testHomePage.TestSignPage"/>-->
-            <!--<class name="testHomePage.TestSignUp"/>-->
-            <!--<class name="testHomePage.TestSignUp"/>-->
-            <!--<class name="testHomePage.TestExcelReader"/>-->
-            <class name="testHomePage.TestFreeEpisodes"/>
 
+    <test name = "Search" enabled="false">
+        <classes>
+            <class name="testHomePage.TestMainPage"/>
+        </classes>
+    </test>
+    <test name = "Search" enabled="true">
+        <classes>
+            <class name="testHomePage.TestNewItemStuff"/>
+        </classes>
+    </test>
+    <test name = "Search" enabled="false">
+        <classes>
+            <class name="testHomePage.TestSignPage"/>
+        </classes>
+    </test>
+    <test name = "Search" enabled="false">
+        <classes>
+            <class name="testHomePage.TestExcelReader"/>
+        </classes>
+    </test>
+    <test name = "Search" enabled="false">
+        <classes>
+            <class name="testHomePage.TestFreeEpisodes"/>
+        </classes>
+    </test>
+    <test name = "Search" enabled="false">
+        <classes>
+            <class name="testHomePage.TestSignUp"/>
+        </classes>
+    </test>
+    <test name = "Search" enabled="false">
+        <classes>
+            <class name="testHomePage.TestMouseOverHandle"/>
+        </classes>
+    </test>
+    <test name = "Search" enabled="false">
+        <classes>
+            <class name="testHomePage.TestSearch"/>
+        </classes>
+    </test>
+    <test name = "Search" enabled="false">
+        <classes>
+            <class name="testHomePage.TestExcelReader"/>
+        </classes>
+    </test>
+    <test name = "Search" enabled="false">
+        <classes>
+            <class name="testHomePage.TestSearchBox"/>
+        </classes>
+    </test>
+    <test name = "Search" enabled="false">
+        <classes>
+            <class name="datatest.GoogleSheetTest"/>
+        </classes>
+    </test>
+    <test name = "Search" enabled="false">
+        <classes>
+            <class name="testHomePage.TestFindSports"/>
         </classes>
     </test>
 

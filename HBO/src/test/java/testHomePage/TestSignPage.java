@@ -19,7 +19,5 @@ import org.testng.annotations.Test;
         ssp.emailForSignIn();
         ssp.enterPassW();
         ssp.errorMessage();
-
     }
-
-}
+    }

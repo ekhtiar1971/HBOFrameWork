@@ -29,8 +29,7 @@ public class SignUp extends CommonAPI {
 
 
         public void getGetHbo() {
-        TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object() {
-        }.getClass().getEnclosingMethod().getName()));
+        TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object() {}.getClass().getEnclosingMethod().getName()));
         findGetHBO.click();}
         public void getStartYourFreeTrial () {
             startYourFreeTrial.click();
@@ -39,7 +38,7 @@ public class SignUp extends CommonAPI {
             email.sendKeys("rekhtiar@hotmail.com");
         }
         public void getPassword () {
-            password.sendKeys("12345678");
+            password.sendKeys("Ab345678");
         }
         public void firstName(){
             entFName.sendKeys("tahsan");
@@ -49,50 +48,37 @@ public class SignUp extends CommonAPI {
         public void getAgreeToTerms() { agreeToTerms.click(); }
         public void getClickOnCreateAccount() { clickOnCreateAccount.click(); }
 
-
-
-    public void getGetHbo1() {
-        TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object() {
-        }.getClass().getEnclosingMethod().getName()));
+        public void getGetHbo1() {
+        TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object() {}.getClass().getEnclosingMethod().getName()));
         findGetHBO.click();}
-    public void getStartYourFreeTrial1 () {
-        startYourFreeTrial.click();
-    }
-    public void getEmail1 () {
-        email.sendKeys("tahsan7112@gmail.com");
-    }
-    public void getPassword1 () {
-        password.sendKeys("876532321");
-    }
-    public void firstName1(){
-        entFName.sendKeys("tasneem");
-    }
-    public void getLastName1() { lastName.sendKeys("Ekhtiar"); }
-    public void getZipCode1() { zipCode.sendKeys("114324"); }
-    public void getAgreeToTerms1() { agreeToTerms.click(); }
-    public void getClickOnCreateAccount1() { clickOnCreateAccount.click(); }
+        public void getStartYourFreeTrial1 () {
+        startYourFreeTrial.click(); }
+        public void getEmail1 () {
+        email.sendKeys("tahsan7112@gmail.com"); }
+        public void getPassword1 () {
+        password.sendKeys("8765323aB"); }
+        public void firstName1(){
+        entFName.sendKeys("tasneem"); }
+        public void getLastName1() { lastName.sendKeys("Ekhtiar"); }
+        public void getZipCode1() { zipCode.sendKeys("14324"); }
+        public void getAgreeToTerms1() { agreeToTerms.click(); }
+        public void getClickOnCreateAccount1() { clickOnCreateAccount.click(); }
 
-
-    public void getGetHbo2() {
-        TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object() {
-        }.getClass().getEnclosingMethod().getName()));
+        public void getGetHbo2() {
+        TestLogger.log(getClass().getSimpleName() + ": " + convertToString(new Object() {}.getClass().getEnclosingMethod().getName()));
         findGetHBO.click();}
-    public void getStartYourFreeTrial2 () {
-        startYourFreeTrial.click();
-    }
-    public void getEmail2 () {
-        email.sendKeys("rinumagura81@gmailk.com");
-    }
-    public void getPassword2() {
-        password.sendKeys("654532321");
-    }
-    public void firstName2(){
-        entFName.sendKeys("sajib");
-    }
-    public void getLastName2() { lastName.sendKeys("atiar"); }
-    public void getZipCode2() { zipCode.sendKeys("114764"); }
-    public void getAgreeToTerms2() { agreeToTerms.click(); }
-    public void getClickOnCreateAccount2() { clickOnCreateAccount.click(); }
+        public void getStartYourFreeTrial2 () {
+        startYourFreeTrial.click(); }
+        public void getEmail2 () {
+        email.sendKeys("rinumagura81@gmailk.com"); }
+        public void getPassword2() {
+        password.sendKeys("65453Sd321"); }
+        public void firstName2(){
+        entFName.sendKeys("sajib"); }
+        public void getLastName2() { lastName.sendKeys("atiar"); }
+        public void getZipCode2() { zipCode.sendKeys("11464"); }
+        public void getAgreeToTerms2() { agreeToTerms.click(); }
+        public void getClickOnCreateAccount2() { clickOnCreateAccount.click(); }
     }
 
 

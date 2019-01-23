@@ -25,7 +25,5 @@ import org.testng.annotations.Test;
     }
     @Test(priority = 4)
         public void getLogoVarification()throws InterruptedException{
-        fp.logoVarify();
+        fp.logoVarify(); }
     }
-
-}

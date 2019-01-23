@@ -1,7 +1,6 @@
 package homePage;
 
 import base.CommonAPI;
-import base.CommonAPI;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
@@ -9,7 +8,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.testng.Assert;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -54,8 +52,6 @@ public class MainPage extends CommonAPI {
     WebElement twitterForHbo;
     @FindBy(css = "[viewBox='0 0 20 20']")
     WebElement findInstogram;
-    //@FindBy(css="[transform] .components\\/SocialMediaIcon--white")
-    //WebElement findYoutube;
     @FindBy(linkText = "ABOUT")
     WebElement about;
     @FindBy(linkText = "WAYS TO GET")
@@ -80,8 +76,6 @@ public class MainPage extends CommonAPI {
     WebElement playVideo;
     @FindBy(xpath = "//div[@class='__player-placeholder-play-button']")
     WebElement findPlayVideo;
-    //@FindBy(xpath = "//video[@class='__player-videoElement']")
-    //WebElement videoPlayPause;
     @FindBy(xpath = "2 Dope Queens")
     WebElement findUrl;
     @FindBy(linkText = "MOVIES")
@@ -94,34 +88,44 @@ public class MainPage extends CommonAPI {
     WebElement findZToA;
 
 
-    public void getMovies(){ findMovies.click();
+    public void getMovies(){
+        findMovies.click();
     }
-    public void getSeries(){ findSeries.click();
+    public void getSeries(){
+        findSeries.click();
     }
     public void getSpecials(){ findSpecials.click();
     }
     public boolean logotest(){
         boolean logo=findlogo.isDisplayed();
-       return logo; }
-    public void searchSports(){ sports.click();
-       driver.close();}
-    public void findSearchIcon(){searchIcon.click();
+        return logo; }
+    public void searchSports(){
+        sports.click();
+        driver.close();}
+    public void findSearchIcon(){
+        searchIcon.click();
     }
-    public void findSearchBx(){searchBox.sendKeys("Dean",Keys.ENTER);
+    public void findSearchBx(){
+        searchBox.sendKeys("Dean",Keys.ENTER);
     }
     public  String searchItem(){
         String text=getTextElements.getText();
         return text;
     }
-    public void getKids(){findKids.click();
+    public void getKids(){
+        findKids.click();
     }
-    public void getEpisodes(){findFreeEpisodes.click();
+    public void getEpisodes(){
+        findFreeEpisodes.click();
     }
-    public void getSchedule(){findSchedule.click();
+    public void getSchedule(){
+        findSchedule.click();
     }
-    public void getSignInFunction(){signInOption.click();
+    public void getSignInFunction(){
+        signInOption.click();
     }
-    public void getHboFunction(){getHbo.click();
+    public void getHboFunction(){
+        getHbo.click();
     }
     public  String getMovieTitle(){
         findMovies.click();
@@ -147,28 +151,38 @@ public class MainPage extends CommonAPI {
                 .moveToElement(driver.findElement(By.xpath("//li[@class='components/FilterBar--unselectedItem']")))
                 .build()
                 .perform(); }
-    public void getTwitterForHbo(){twitterForHbo.click();
+    public void getTwitterForHbo(){
+        twitterForHbo.click();
     }
-    public void getInstogramFHbo(){findInstogram.click();
+    public void getInstogramFHbo(){
+        findInstogram.click();
     }
-    //public void getYoutube(){findYoutube.click();}
-    public void getAbout(){about.click();
+    public void getAbout(){
+        about.click();
     }
-    public void getWayToGet(){findWayToGet.click();
+    public void getWayToGet(){
+        findWayToGet.click();
     }
-    public void getHelp(){findHelp.click();
+    public void getHelp(){
+        findHelp.click();
     }
-    public void getShop(){findShop.click();
+    public void getShop(){
+        findShop.click();
     }
-    public void getCareer(){findCareer.click();
+    public void getCareer(){
+        findCareer.click();
     }
-    public void getInspire(){findInspire.click();
+    public void getInspire(){
+        findInspire.click();
     }
-    public void getPrivatePolicy(){findPrivacyPolicy.click();
+    public void getPrivatePolicy(){
+        findPrivacyPolicy.click();
     }
-    public void getTerms(){findTerms.click();
+    public void getTerms(){
+        findTerms.click();
     }
-    public void getAdChoice(){findAdChoice.click();
+    public void getAdChoice(){
+        findAdChoice.click();
     }
     public String imageVarification()throws InterruptedException{
         System.out.println("Show image display :" +findImage.isDisplayed());
@@ -188,15 +202,8 @@ public class MainPage extends CommonAPI {
         Assert.assertEquals(actual,expected);
         return title;
     }
-    /*public String getUrl(){
-        Actions action=new Actions(driver);
-        action.moveToElement().build().perform();
-        findUrl.click();
-        String url=driver.getCurrentUrl();
-        return url;}*/
     public void getAllMoviesByOrder()throws InterruptedException{
         findTheMovies.click();
-        //wait.wait(5);
         allMovies.click();
         Thread.sleep(5);
         findMenu.click();
@@ -233,19 +240,13 @@ public class MainPage extends CommonAPI {
        expectedWebElItem.add("FREE EPISODES");
        expectedWebElItem.add("GET HBO");
        expectedWebElItem.add("SCHEDULE");
-
        return expectedWebElItem;
-
     }
-
     public String getUrlOfSports(){
         sports.click();
         String st=driver.getCurrentUrl();
         System.out.println(st);
         return st;
-
     }
-
-
 }
 

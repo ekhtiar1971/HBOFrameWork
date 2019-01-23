@@ -6,7 +6,6 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Factory;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -35,7 +34,6 @@ public class FreeEpisodes extends CommonAPI {
     WebElement playCrashing;
 
 
-
     public WebElement getFreeEpisodes(){
         findFreeEpisodes.click();
         return findFreeEpisodes;
@@ -45,16 +43,16 @@ public class FreeEpisodes extends CommonAPI {
         return Sally4ever;
     }
     public WebElement playVid(){
-      playVideo.click();
-      return playVideo;
+        playVideo.click();
+        return playVideo;
     }
     public WebElement getpodSAve(){
         SaveAmerica.click();
         return SaveAmerica;
     }
     public WebElement getVideo(){
-       playVideo2.click();
-       return playVideo2;
+        playVideo2.click();
+        return playVideo2;
     }
     public void getSharpObject(){
         SharpObject.click();
@@ -98,5 +96,4 @@ public class FreeEpisodes extends CommonAPI {
         listOfEpisodes.add("Crashing");
         return listOfEpisodes;
     }
-
 }

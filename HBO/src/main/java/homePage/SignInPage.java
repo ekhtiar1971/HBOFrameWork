@@ -49,6 +49,5 @@ public class SignInPage extends CommonAPI {
         String actual=errorMessageAppear.getText();
         String expected="The email address or password is incorrect. Please try again.";
         Assert.assertEquals(actual,expected);
-
     }
    }
