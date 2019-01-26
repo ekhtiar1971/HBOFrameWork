@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="Generic" />
         <module name="HBO" />
+        <module name="RestAPI" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="8" />

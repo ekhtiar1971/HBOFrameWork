@@ -1,29 +1,70 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 22, Failures: 2, Errors: 0, Skipped: 20, Time elapsed: 53.4 s <<< FAILURE! - in TestSuite
-get7DaysIn(testHomePage.TestFindSports)  Time elapsed: 25.184 s  <<< FAILURE!
-org.openqa.selenium.TimeoutException: 
-timeout
-  (Session info: chrome=71.0.3578.98)
-  (Driver info: chromedriver=2.42.591059 (a3d9684d10d61aa0c45f6723b327283be1ebaad8),platform=Mac OS X 10.13.6 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'Shahnazs-MBP.fios-router.home', ip: 'fe80:0:0:0:41e:aa70:e1ee:cbfb%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.6', java.version: '1.8.0_202-ea'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.42.591059 (a3d9684d10d61a..., userDataDir: /var/folders/x8/60jw2y790m5...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:51650}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 71.0.3578.98, webStorageEnabled: true}
-Session ID: ed03a4a3dc0db830e7ed8fe162e3dec5
-	at testHomePage.TestFindSports.get7DaysIn(TestFindSports.java:28)
+Tests run: 40, Failures: 6, Errors: 0, Skipped: 8, Time elapsed: 141.854 s <<< FAILURE! - in TestSuite
+MovieTitle(testHomePage.TestMainPage)  Time elapsed: 1.443 s  <<< FAILURE!
+java.lang.AssertionError: expected [HBO Original Movies & Films: watch Online | HBO Official Site] but found [HBO Original Movies & Films: Watch Online | HBO Official Site]
+	at testHomePage.TestMainPage.MovieTitle(TestMainPage.java:65)
 
-afterEachTestMethod(testHomePage.TestFindSports)  Time elapsed: 50.434 s  <<< FAILURE!
-org.openqa.selenium.TimeoutException: 
-timeout
+getFacebook(testHomePage.TestMainPage)  Time elapsed: 20.344 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"id","selector":"loginbutton"}
+  (Session info: chrome=71.0.3578.98)
+  (Driver info: chromedriver=2.42.591059 (a3d9684d10d61aa0c45f6723b327283be1ebaad8),platform=Mac OS X 10.13.6 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'Shahnazs-MBP.fios-router.home', ip: 'fe80:0:0:0:89e:27fe:12dd:8081%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.6', java.version: '1.8.0_202-ea'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.42.591059 (a3d9684d10d61a..., userDataDir: /var/folders/x8/60jw2y790m5...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:52897}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 71.0.3578.98, webStorageEnabled: true}
+Session ID: 19c678da8de6168ea7fb3ea723981642
+*** Element info: {Using=id, value=loginbutton}
+	at testHomePage.TestMainPage.getFacebook(TestMainPage.java:68)
+
+playVideo(testHomePage.TestMainPage)  Time elapsed: 10.068 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/main[@class='wrapperMain']/div[6]/div/div//div[@class='modules/cards/BasicCard--tabletContainer']/section[@class='modules/PromotionalCard--carouselContainer']//div[@class='components/Carousel--container']/div[1]/div//div[@class='components/CardText--body']/a[@href='/movies/brexit']/div[@class='components/CardText--title']"}
+  (Session info: chrome=71.0.3578.98)
+  (Driver info: chromedriver=2.42.591059 (a3d9684d10d61aa0c45f6723b327283be1ebaad8),platform=Mac OS X 10.13.6 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'Shahnazs-MBP.fios-router.home', ip: 'fe80:0:0:0:89e:27fe:12dd:8081%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.6', java.version: '1.8.0_202-ea'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.42.591059 (a3d9684d10d61a..., userDataDir: /var/folders/x8/60jw2y790m5...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:53986}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 71.0.3578.98, webStorageEnabled: true}
+Session ID: 0267a7c43c2e6ebd345f224607709793
+*** Element info: {Using=xpath, value=/html/body/main[@class='wrapperMain']/div[6]/div/div//div[@class='modules/cards/BasicCard--tabletContainer']/section[@class='modules/PromotionalCard--carouselContainer']//div[@class='components/Carousel--container']/div[1]/div//div[@class='components/CardText--body']/a[@href='/movies/brexit']/div[@class='components/CardText--title']}
+	at testHomePage.TestMainPage.playVideo(TestMainPage.java:110)
+
+searchBox(testHomePage.TestMainPage)  Time elapsed: 10.068 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//input[@ type='text']"}
+  (Session info: chrome=71.0.3578.98)
+  (Driver info: chromedriver=2.42.591059 (a3d9684d10d61aa0c45f6723b327283be1ebaad8),platform=Mac OS X 10.13.6 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'Shahnazs-MBP.fios-router.home', ip: 'fe80:0:0:0:89e:27fe:12dd:8081%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.6', java.version: '1.8.0_202-ea'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.42.591059 (a3d9684d10d61a..., userDataDir: /var/folders/x8/60jw2y790m5...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:54131}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 71.0.3578.98, webStorageEnabled: true}
+Session ID: 2d61304e253b16c7354bfc8f164ba54c
+*** Element info: {Using=xpath, value=//input[@ type='text']}
+	at testHomePage.TestMainPage.searchBox(TestMainPage.java:39)
+
+showImage(testHomePage.TestMainPage)  Time elapsed: 1.851 s  <<< FAILURE!
+java.lang.NullPointerException
+	at testHomePage.TestMainPage.showImage(TestMainPage.java:107)
+
+afterEachTestMethod(testHomePage.TestMainPage)  Time elapsed: 1.872 s  <<< FAILURE!
+org.openqa.selenium.NoSuchWindowException: 
+no such window: target window already closed
+from unknown error: web view not found
   (Session info: chrome=71.0.3578.98)
   (Driver info: chromedriver=2.42.591059 (a3d9684d10d61aa0c45f6723b327283be1ebaad8),platform=Mac OS X 10.13.6 x86_64) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'Shahnazs-MBP.fios-router.home', ip: 'fe80:0:0:0:41e:aa70:e1ee:cbfb%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.6', java.version: '1.8.0_202-ea'
+System info: host: 'Shahnazs-MBP.fios-router.home', ip: 'fe80:0:0:0:89e:27fe:12dd:8081%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.6', java.version: '1.8.0_202-ea'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.42.591059 (a3d9684d10d61a..., userDataDir: /var/folders/x8/60jw2y790m5...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:51650}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 71.0.3578.98, webStorageEnabled: true}
-Session ID: ed03a4a3dc0db830e7ed8fe162e3dec5
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.42.591059 (a3d9684d10d61a..., userDataDir: /var/folders/x8/60jw2y790m5...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:54300}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 71.0.3578.98, webStorageEnabled: true}
+Session ID: 18878c4652d1668b9d88ec4fabcdb050
 

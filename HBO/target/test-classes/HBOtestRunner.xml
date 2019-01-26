@@ -13,12 +13,12 @@
     <parameter name="url" value="https://www.hbo.com/"/>
 
 
-    <test name = "Search" enabled="false">
+    <test name = "Search" enabled="true">
         <classes>
             <class name="testHomePage.TestMainPage"/>
         </classes>
     </test>
-    <test name = "Search" enabled="true">
+    <test name = "Search" enabled="false">
         <classes>
             <class name="testHomePage.TestNewItemStuff"/>
         </classes>

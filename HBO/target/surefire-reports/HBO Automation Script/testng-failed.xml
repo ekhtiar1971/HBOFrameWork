@@ -10,21 +10,23 @@
   <parameter name="url" value="https://www.hbo.com/"/>
   <test thread-count="5" verbose="0" name="Search(failed)">
     <classes>
-      <class name="testHomePage.TestFindSports">
+      <class name="testHomePage.TestMainPage">
         <methods>
-          <include name="getAboutTapia"/>
           <include name="afterEachTestMethod"/>
-          <include name="generateReport"/>
-          <include name="getBRuth"/>
+          <include name="getInformation"/>
+          <include name="searchBox"/>
+          <include name="signIn"/>
           <include name="extentSetup"/>
-          <include name="get7DaysIn"/>
-          <include name="setUp"/>
           <include name="startExtent"/>
-          <include name="sports"/>
-          <include name="getSportsOption"/>
           <include name="cleanUP"/>
+          <include name="MovieTitle"/>
+          <include name="playVideo"/>
+          <include name="showImage"/>
+          <include name="getFacebook"/>
+          <include name="generateReport"/>
+          <include name="setUp"/>
         </methods>
-      </class> <!-- testHomePage.TestFindSports -->
+      </class> <!-- testHomePage.TestMainPage -->
     </classes>
   </test> <!-- Search(failed) -->
 </suite> <!-- Failed suite [HBO Automation Script] -->
